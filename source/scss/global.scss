@@ -1,26 +1,39 @@
-html {
-  box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
-body {
-  background-color: $white;
-  color: $black;
-  font-family: $main-font;
+html {
+  box-sizing: border-box;
+
   font-size: 14px;
-  font-weight: normal;
   line-height: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
 }
 
+body {
+  width: 100%;
+
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: normal;
+
+  color: $black;
+  background-color: $white;
+}
+
+video,
 img {
+  display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {

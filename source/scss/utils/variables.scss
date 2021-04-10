@@ -1,9 +1,10 @@
 /* Здесь хранятся все переменные стилей проекта. Указанные ниже переменные приведены в качестве демонстрации. */
 
-// Размеры вьюпорта
-// $sm: 320px;
-// $md: 768px;
-// $xl: 1280px;
+// Mobile first
+$mediaWidthMobile: 320px;
+$mediaWidthTablet: 768px;
+$mediaWidthTabletHorizontal: 1024px;
+$mediaWidthLaptop: 1366px;
 
 // Цвета
 $black: #000;
