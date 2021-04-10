@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
-  <meta name="description" content="HTML5 webpack boilerplate" />
-  <title>HTML5 webpack boilerplate</title>
+  <meta name="description" content="Отель для кошек" />
+  <title>Кошачий отель</title>
   <link rel="stylesheet" href="/vendors/normalize-css/normalize.min.css" />
   <script>
     if (!window.HTMLPictureElement) {
@@ -17,12 +17,7 @@
 <!--header.html-->
 <%= _.template(require('../includes/common/header.html').default)({}) %>
 <main>
-  <!--index/hero.html-->
-  <%= _.template(require('../includes/index/hero.html').default)({
-    version: htmlWebpackPlugin.options.custom.version,
-  }) %>
-  <!--index/structure.html-->
-  <%= _.template(require('../includes/index/structure.html').default)({}) %>
+
 </main>
 <!--footer.html-->
 <%= _.template(require('../includes/common/footer.html').default)({}) %>
