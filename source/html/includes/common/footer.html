@@ -1,2 +1,16 @@
-<footer>
+<footer class="footer">
+  <div class="footer__top">
+    <a class="footer__logo">
+      <img class="footer__logo-img" src="img/logo.svg" alt="" />
+    </a>
+
+    <%= navListTemplate({
+      bemBlock: "footer"
+    }) %>
+  </div>
+
+  <div class="footer__copyright copyright">
+    <p class="copyright__item">2019 Все права защищены</p>
+    <a class="copyright__item" href="#">Политика конфиденциальности</a>
+  </div>
 </footer>

@@ -15,11 +15,32 @@
 </head>
 <body>
   <!--header.html-->
-  <%= _.template(require('../includes/common/header.html').default)({}) %>
+  <%= _.template(require('../includes/common/header.html').default)({
+    socialTemplate: _.template(require('../includes/common/social.html').default),
+    navListTemplate: _.template(require('../includes/common/nav-list.html').default)
+  }) %>
 <main>
+  <!--intro.html-->
+  <%= _.template(require('../includes/index/intro.html').default)({}) %>
+
+  <!--advantages.html-->
+  <%= _.template(require('../includes/index/advantages.html').default)({}) %>
+
+  <!--rooms.html-->
+  <%= _.template(require('../includes/index/rooms.html').default)({}) %>
+
+  <!--testimonial.html-->
+  <%= _.template(require('../includes/index/testimonial.html').default)({}) %>
+
+  <!--contacts.html-->
+  <%= _.template(require('../includes/index/contacts.html').default)({
+    socialTemplate: _.template(require('../includes/common/social.html').default)
+  }) %>
 
 </main>
   <!--footer.html-->
-  <%= _.template(require('../includes/common/footer.html').default)({}) %>
+  <%= _.template(require('../includes/common/footer.html').default)({
+    navListTemplate: _.template(require('../includes/common/nav-list.html').default)
+  }) %>
 </body>
 </html>

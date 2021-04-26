@@ -1,0 +1,32 @@
+<section class="contacts" id="contacts">
+    <h2 class="contacts__title">Как нас найти</h2>
+
+      <div class="contacts__item">
+        <h3 class="contacts__item-title">Адрес</h3>
+        <p class="contacts__item-text">Санкт-Петербург, ул Большая Конюшенная, д 19</p>
+      </div>
+
+      <div class="contacts__item">
+        <h3 class="contacts__item-title">Режим работы</h3>
+        <p class="contacts__item-text">Ежедневно, с 9:00 до 20:00</p>
+      </div>
+
+      <div class="contacts__item">
+        <h3 class="contacts__item-title">Телефон</h3>
+        <a class="contacts__item-text" href="tel:+78003335599">8 (800) 333-55-99</a>
+      </div>
+
+      <div class="contacts__item">
+        <h3 class="contacts__item-title">E-mail</h3>
+        <a class="contacts__item-text" href="mailto:info@cat-hotel.ru">info@cat-hotel.ru</a>
+      </div>
+
+      <%= socialTemplate({
+        bemClass: "contacts__item"
+      }) %>
+  </div>
+
+  <div class="contacts__map">
+    <img class="contacts__map-img" src="https://via.placeholder.com/798x580?text=Карта" width="798" height="580" alt="Наш адрес город Санкт-Петербург, улица Большая Конюшенная дом 19">
+  </div>
+</section>
